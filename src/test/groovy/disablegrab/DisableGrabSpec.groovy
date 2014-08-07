@@ -6,8 +6,7 @@ import org.codehaus.groovy.control.*
 class DisableGrabSpec extends Specification {
     def "test"() {
         given:
-        def conf = new CompilerConfiguration()
-        def shell = new GroovyShell(this.class.classLoader)
+        def shell = new GroovyShell()
 
         when:
         shell.evaluate '''
